@@ -12,18 +12,18 @@ export class CounterComponent {
 
   constructor(
     private store: CounterStoreService,
-    private logic: CounterTimerService
+    private timer: CounterTimerService
   ) {}
 
   start() {
-    this.logic.start();
+    this.timer.start();
   }
 
   stop() {
-    this.logic.stop();
+    this.timer.stop();
   }
 
   reset() {
-    this.logic.reset();
+    this.timer.reset();
   }
 }
