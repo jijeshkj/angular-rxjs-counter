@@ -1,0 +1,9 @@
+<div class="text-center mt-5">
+    <h3>Counter App</h3>
+    <h1 class="display-1 text-primary" (click)="reset()" style="cursor:pointer;">
+      {{ value$ | async }}
+    </h1>
+    <button class="btn btn-success me-3" (click)="start()">Start</button>
+    <button class="btn btn-danger" (click)="stop()">Stop</button>
+  </div>
+  
